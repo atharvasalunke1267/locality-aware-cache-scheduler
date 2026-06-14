@@ -46,7 +46,7 @@ Compilation & Execution
 Compile the project via terminal:
 
 Bash
-g++ -std=c++11 main.cpp -o cache_simulator
+g++ -std=c++11 main.cpp -o cache_simulator && ./cache_simulator
 ./cache_simulator
 📈 Example Output
 Plaintext
