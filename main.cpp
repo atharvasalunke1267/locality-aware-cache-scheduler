@@ -186,6 +186,7 @@ for(int i=0; i<blocks.size();i++){
 cout<<"L1 Cache:";L1.printmem();cout<<endl;
     cout<<"L2 Cache:";L2.printmem();cout<<endl;
     cout<<"L3 Cache:";L3.printmem();cout<<endl;
+    cout<<endl;
     for(const string& req:t.memory){
         node* current=L1.head->next;
           bool foundinL1=false;
@@ -241,10 +242,11 @@ cout<<"L1 Cache:";L1.printmem();cout<<endl;
         cout << "L1MISS->L2 MISS->L3 MISS->RAM "<<endl;
         insertionbetweenmem(req,L1,L2,L3);
         RAMHIT++;
-
+    cout<<endl;
         cout<<"L1 Cache: "; L1.printmem();cout<<endl;
     cout<<"L2 Cache: "; L2.printmem();cout<<endl;
     cout<<"L3 Cache: "; L3.printmem();cout<<endl;
+    cout<<endl;
 }
     }
 
