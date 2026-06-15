@@ -240,11 +240,11 @@ cout<<"L1 Cache:";L1.printmem();cout<<endl;
         cout << "L1MISS->L2 MISS->L3 MISS->RAM "<<endl;
         insertionbetweenmem(req,L1,L2,L3);
         RAMHIT++;
-}
-    cout << "  L1 Cache: "; L1.printmem();cout<< endl;
-    cout << "  L2 Cache: "; L2.printmem();cout<< endl;
-    cout << "  L3 Cache: "; L3.printmem();cout<< endl;
 
+        cout<<"L1 Cache: "; L1.printmem();cout<<endl;
+    cout<<"L2 Cache: "; L2.printmem();cout<<endl;
+    cout<<"L3 Cache: "; L3.printmem();cout<<endl;
+}
     }
 
 int main() {
@@ -261,7 +261,7 @@ int main() {
         while(i>>memblock) {
             blocks.push_back(memblock);
         }
-        int extracy= abs(time-blocks.size());
+        int extracy= abs(time-(int)blocks.size());
         task a(name,time,blocks,extracy);
         givent.push_back(a);
     }
